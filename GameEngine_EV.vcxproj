@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFD2787F-2A79-4115-9A56-40D3AEF20EF8}</ProjectGuid>
+    <RootNamespace>GameEngine_EV</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)./common;$(SolutionDir)./deps/FMOD/include;$(SolutionDir)./deps/FreeType/include;$(SolutionDir)./deps/glm;$(SolutionDir)./deps/glfw/include;$(SolutionDir)./deps/physx/include;$(SolutionDir)./deps;$(SolutionDir)./deps/assimp/include;$(SolutionDir)./deps/FBXLoader/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)./deps/FMOD/lib;$(SolutionDir)./deps/FreeType/lib;$(SolutionDir)./deps/glfw/lib-vc2013;$(SolutionDir)./deps/physx/lib/vc12win32;$(SolutionDir)./deps/assimp/lib/x86;$(SolutionDir)./deps/FBXLoader/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)./common;$(SolutionDir)./deps/FMOD/include;$(SolutionDir)./deps/FreeType/include;$(SolutionDir)./deps/glm;$(SolutionDir)./deps/glfw/include;$(SolutionDir)./deps/physx/include;$(SolutionDir)./deps;$(SolutionDir)./deps/assimp/include;$(SolutionDir)./deps/FBXLoader/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)./deps/FMOD/lib;$(SolutionDir)./deps/FreeType/lib;$(SolutionDir)./deps/glfw/lib-vc2013;$(SolutionDir)./deps/physx/lib/vc12win32;$(SolutionDir)./deps/assimp/lib/x86;$(SolutionDir)./deps/FBXLoader/lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\$(Configuration)\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;GLM_FORCE_PURE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>FBXLoader_d.lib;freetype254.lib;fmodex_vc.lib;glfw3.lib;opengl32.lib;PhysX3DEBUG_x86.lib;PhysX3ExtensionsDEBUG.lib;PhysX3CommonDEBUG_x86.lib;PhysXVisualDebuggerSDKDEBUG.lib;PhysX3CharacterKinematicDEBUG_x86.lib;PhysXProfileSDKDEBUG.lib;PhysX3CookingDEBUG_x86.lib;PxTaskDEBUG.lib;PhysX3GpuDEBUG_x86.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;WIN32;GLM_FORCE_PURE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>FBXLoader.lib;freetype254.lib;glfw3.lib;opengl32.lib;fmodex_vc.lib;PhysX3_x86.lib;PhysX3Extensions.lib;PhysX3Common_x86.lib;PhysXVisualDebuggerSDK.lib;PhysX3CharacterKinematic_x86.lib;PhysX3Cooking_x86.lib;PhysXProfileSDK.lib;PxTask.lib;PhysX3Gpu_x86.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="common\gl_core_4_4.c" />
+    <ClCompile Include="src\Bounds.cpp" />
+    <ClCompile Include="src\BoxCollider.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\CapsuleCollider.cpp" />
+    <ClCompile Include="src\CharacterController.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\CoreEngine.cpp" />
+    <ClCompile Include="src\CustomPhysicsEngine.cpp" />
+    <ClCompile Include="src\Debug.cpp" />
+    <ClCompile Include="src\Explorer.cpp" />
+    <ClCompile Include="src\Fluid.cpp" />
+    <ClCompile Include="src\FlyCameraScript.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\Gizmos.cpp" />
+    <ClCompile Include="src\GUI.cpp" />
+    <ClCompile Include="src\imgui.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\Lighting.cpp" />
+    <ClCompile Include="src\LineSegment.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MaterialData.cpp" />
+    <ClCompile Include="src\Material.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\MeshCollider.cpp" />
+    <ClCompile Include="src\MeshRenderer.cpp" />
+    <ClCompile Include="src\OBB.cpp" />
+    <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\ParticleEmitter.cpp" />
+    <ClCompile Include="src\PhysXEngine.cpp" />
+    <ClCompile Include="src\PlaneCollider.cpp" />
+    <ClCompile Include="src\Ragdoll.cpp" />
+    <ClCompile Include="src\RenderingEngine.cpp" />
+    <ClCompile Include="src\Rigidbody.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\SphereCollider.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\Time.cpp" />
+    <ClCompile Include="src\Transform.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\GLFW_Header.h" />
+    <ClInclude Include="common\GLM_Header.h" />
+    <ClInclude Include="common\gl_core_4_4.h" />
+    <ClInclude Include="src\Bounds.h" />
+    <ClInclude Include="src\BoxCollider.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\CapsuleCollider.h" />
+    <ClInclude Include="src\CharacterController.h" />
+    <ClInclude Include="src\Collider.h" />
+    <ClInclude Include="src\Color.h" />
+    <ClInclude Include="src\Component.h" />
+    <ClInclude Include="src\CoreEngine.h" />
+    <ClInclude Include="src\CustomPhysicsEngine.h" />
+    <ClInclude Include="src\Debug.h" />
+    <ClInclude Include="src\Explorer.h" />
+    <ClInclude Include="src\Fluid.h" />
+    <ClInclude Include="src\FlyCameraScript.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\Gizmos.h" />
+    <ClInclude Include="src\GUI.h" />
+    <ClInclude Include="src\imconfig.h" />
+    <ClInclude Include="src\imgui.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\Lighting.h" />
+    <ClInclude Include="src\LineSegment.h" />
+    <ClInclude Include="src\MaterialData.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\MeshCollider.h" />
+    <ClInclude Include="src\MeshRenderer.h" />
+    <ClInclude Include="src\OBB.h" />
+    <ClInclude Include="src\Object.h" />
+    <ClInclude Include="src\ParticleEmitter.h" />
+    <ClInclude Include="src\PhysicsEngine.h" />
+    <ClInclude Include="src\PhysicsObject.h" />
+    <ClInclude Include="src\PhysXEngine.h" />
+    <ClInclude Include="src\PlaneCollider.h" />
+    <ClInclude Include="src\Ragdoll.h" />
+    <ClInclude Include="src\Ray.h" />
+    <ClInclude Include="src\RenderingEngine.h" />
+    <ClInclude Include="src\Rigidbody.h" />
+    <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\SphereCollider.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Texture.h" />
+    <ClInclude Include="src\Time.h" />
+    <ClInclude Include="src\Transform.h" />
+    <ClInclude Include="src\Vertex.h" />
+    <ClInclude Include="src\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\shaders\default-forward-lighting-animation.glsl" />
+    <None Include="data\shaders\default-forward-lighting.glsl" />
+    <None Include="data\shaders\defaultShader.glsl" />
+    <None Include="data\shaders\filter-fxaa.glsl" />
+    <None Include="data\shaders\filter-gausBlur7x1.glsl" />
+    <None Include="data\shaders\filter-null.glsl" />
+    <None Include="data\shaders\filter.vsh" />
+    <None Include="data\shaders\lighting.glh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
