@@ -1,4 +1,3 @@
-# c_gameengine
 C Game Engine
 =============
 
