@@ -1,11 +1,11 @@
 C Game Engine
 =============
 
-What started out as a mere PhysX engine turned into a tool for creating 2D & 3D games. The Game Engine was created using C++ along with OpenGL and has been one of my biggest projects!
+What started out as a mere [PhysX](https://en.wikipedia.org/wiki/PhysX) engine turned into a tool for creating 2D & 3D games. The Game Engine was created using C++ along with OpenGL and has been one of my biggest projects!
 
 <img src="https://lh5.googleusercontent.com/9NEKGaEAUFrSYh-b8khLpgl3zV8FpcN9gW7ucask4Dw6wwa-NEWsYC3n9BjOKNQ2HsoR6q7Qc3NM3Ml8CaXh=w1920-h894-rw" alt="" width="80%" height="80%"/>
 
-It uses a Component Object Model (COM) binary-interface standard, similar to Unity's and Unreal's in the sense that each Game Object in the scene contains a list of components. These components define many characteristics of that specific Game Object. By default, every Game Object created has a Transform component already attached which defines the object's Position, Rotation and Scale in the world.
+It uses a [Component Object Model (COM)](https://en.wikipedia.org/wiki/Component_Object_Model) binary-interface standard, similar to [Unity](https://en.wikipedia.org/wiki/Unity_(game_engine))'s and [Unreal](https://en.wikipedia.org/wiki/Unreal_Engine)'s in the sense that each Game Object in the scene contains a list of components. These components define many characteristics of that specific Game Object. By default, every Game Object created has a Transform component already attached which defines the object's Position, Rotation and Scale in the world.
 
 <img src="https://lh6.googleusercontent.com/Wvpy03_1TR8CK2MGhsAF6AsMi4GwpfZYyChH0ElSqnMREVlTR-UfQptQ2cHtOiz1hh9Y3mqMYwmeJpLZ2stO=w1920-h894-rw" alt="" width="80%" height="80%"/>
 
@@ -13,7 +13,7 @@ In order for a Game Object to actually appear within the scene, it needs to be r
 
 <img src="https://lh4.googleusercontent.com/5TtqEGB9gv9k8paE4tXfVOewanfy5H0mFhsZ6UChmDqlWqHtjCEdGk72hsCLacET7aJ8iYw6F1s5DVX9tOOP=w1920-h894-rw" alt="" width="80%" height="80%"/>
 
-The Rendering Engine doesn't just draw textured meshes / sprites to the screen. It is also in charge of handling complex post-processing effects using Shaders. GLSL is the shader language this engine uses and one of the most significant post-processing effect implemented in the engine is Fast Approximate Anti-aliasing (FXAA) for smoothing jaggered edges on Game Objects.
+The Rendering Engine doesn't just draw textured meshes / sprites to the screen. It is also in charge of handling complex post-processing effects using [Shaders](https://en.wikipedia.org/wiki/Shader). GLSL is the shader language this engine uses and one of the most significant post-processing effect implemented in the engine is [Fast Approximate Anti-aliasing (FXAA)](https://en.wikipedia.org/wiki/Fast_approximate_anti-aliasing) for smoothing jaggered edges on Game Objects.
 
 <img src="https://lh5.googleusercontent.com/V8KpvHGCOj1W_FDndf_s7NaAgsBROa5Ib3yjEHSMEDOHjPkbOBM-7smKRJUoQgbTuyfcQzCsfHAwypmTun-w=w1920-h894-rw" alt="" width="80%" height="80%"/>
 
