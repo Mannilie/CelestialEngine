@@ -23,7 +23,7 @@ A versatile C++ game engine designed for creating visually rich games with a foc
 
 **Download and Build**
 
-1. Visit the 'Releases' section of this repository: https://github.com/Mannilie/CelestialEngine/releases
+1. Visit the '[Releases](https://github.com/Mannilie/CelestialEngine/releases)' section of this repository.
 2. Download the latest release appropriate for your system.
 3. Follow any specific build instructions included in the release notes.
 
