@@ -6,7 +6,7 @@ A versatile C++ game engine designed for creating visually rich games with a foc
 
 ## Key Features
 
-* **Advanced Rendering Pipeline:** Supports dynamic lighting, real-time shadows, post-processing effects, and more.  [Can you highlight some specific effects here?]
+* **Advanced Rendering Pipeline:** Supports dynamic lighting, real-time shadows, post-processing effects, and more.
 * **Modular Design:** Systems are designed to be decoupled, making it easy to extend and customize the engine.
 * **Flexible Scene Management:** Easily create and manage complex game worlds using the built-in scene graph.
 
