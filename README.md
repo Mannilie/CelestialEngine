@@ -14,7 +14,7 @@ A versatile C++ game engine designed for creating visually rich games with a foc
 
 **Prerequisites**
 
-* [List the specific dependencies: compilers, libraries, etc.] 
+* Visual Studio 2013 - [Download](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 **Installation and Build Instructions**
 
