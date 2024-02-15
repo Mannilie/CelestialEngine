@@ -1,5 +1,5 @@
-C Game Engine
-=============
+Celestial Engine
+================
 
 What started out as a mere [PhysX](https://en.wikipedia.org/wiki/PhysX) engine turned into a tool for creating 2D & 3D games. The Game Engine was created using C++ along with OpenGL and has been one of my biggest projects!
 
