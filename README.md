@@ -19,13 +19,23 @@ A versatile C++ game engine designed for creating visually rich games with a foc
 **Installation and Build Instructions**
 
 1. Clone the repository: `git clone https://github.com/Mannilie/CelestialEngine.git`
-2. ... [Provide step-by-step build instructions based on your project setup]
+2. Open in Visual Studio 2013
 
-## Running Demos
+**Download and Build**
 
-1. Navigate to the `demos` directory.
-2. [Example] Build and run the 'lighting_showcase': 
-   ```bash
-   cmake -B build
-   cmake --build build
-   ./build/lighting_showcase 
+1. Visit the 'Releases' section of this repository: https://github.com/Mannilie/CelestialEngine/releases
+2. Download the latest release appropriate for your system.
+3. Follow any specific build instructions included in the release notes.
+
+## Engine Highlights
+
+* **Customizable Shaders:**  Write your own GLSL shaders and integrate them seamlessly into the rendering pipeline. 
+* **Physics Integration:** The engine is integrated with PhysX for realistic physics simulations.
+
+## License
+
+CelestialEngine is distributed under the [GNUv3](https://raw.githubusercontent.com/Mannilie/CelestialEngine/master/LICENSE) license. See LICENSE file for details.
+
+## Author
+
+* Emmanuel Vaccaro ([[LinkedIn Profile](https://www.linkedin.com/in/manny-vaccaro/)https://www.linkedin.com/in/manny-vaccaro/])
