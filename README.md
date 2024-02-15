@@ -38,4 +38,4 @@ CelestialEngine is distributed under the [GNUv3](https://raw.githubusercontent.c
 
 ## Author
 
-* Emmanuel Vaccaro ([[LinkedIn Profile](https://www.linkedin.com/in/manny-vaccaro/)https://www.linkedin.com/in/manny-vaccaro/])
+* Emmanuel Vaccaro - [LinkedIn Profile](https://www.linkedin.com/in/manny-vaccaro/)
